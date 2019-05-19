@@ -51,7 +51,13 @@ class SubServiceSelectionVC: UIViewController {
     nextButton.layer.shadowRadius = 6
     nextButton.layer.cornerRadius = 25
     nextButton.setTitle("Далее", for: .normal)
-//    nextButton.backgroundColor = UIColor(rgb: 0xAD63B4)
+
+    nextButton.actionViewClosure = {
+      let subVC = AdressSelectionVC()
+      subVC.navigationItem.title = "Адрес оказания услуги"
+//      subVC.interactor.selectedSerrvice = service
+      self.navigationController?.pushViewController(subVC, animated: true)
+    }
     
     
  

@@ -2,7 +2,7 @@ import UIKit
 
 class GradientButton: UIButton {
   
-  
+  var action: (()->())?
   
   private var gradientLayer: CAGradientLayer?
   
@@ -11,10 +11,15 @@ class GradientButton: UIButton {
     if let gradient = gradient {
       gradientLayer = layer.applyGradient(parameters: gradient)
     }
+    addTarget(self, action: #selector(self.tap), for: .touchUpInside)
   }
   
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+  
+  @objc func tap() {
+    action?()
   }
   
   override func layoutSubviews() {
@@ -30,6 +35,7 @@ class GradientButton: UIButton {
       layer.cornerRadius = bounds.height/2
 
     }
+    
   }
   
   override var isEnabled: Bool {

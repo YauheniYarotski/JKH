@@ -18,21 +18,21 @@ class TabBarController: UITabBarController {
     let tab1 = UITabBarItem()
     tab1.title = NSLocalizedString("Главная", comment: "")
     
-//    tab1.image =  UIImage(named: "journey")?.withRenderingMode(.alwaysTemplate)
+    tab1.image =  UIImage(named: "home")?.withRenderingMode(.alwaysTemplate)
     nav1.tabBarItem = tab1
     
     let vc2 = UIViewController()
     let nav2 = UINavigationController(rootViewController: vc2)
     let tab2 = UITabBarItem()
     tab2.title = NSLocalizedString("Мои заказы", comment: "")
-//    tab2.image = UIImage(named: "go")
+    tab2.image =  UIImage(named: "history")?.withRenderingMode(.alwaysTemplate)
     nav2.tabBarItem = tab2
     
     let vc3 = UIViewController()
     let nav3 = UINavigationController(rootViewController: vc3)
     let tab3 = UITabBarItem()
     tab3.title = NSLocalizedString("Личный кабинет", comment: "")
-//    tab2.image = UIImage(named: "go")
+    tab3.image =  UIImage(named: "profile")?.withRenderingMode(.alwaysTemplate)
     nav3.tabBarItem = tab3
     
     let vc4 = ServiceSelectionVC()
@@ -40,7 +40,7 @@ class TabBarController: UITabBarController {
     let nav4 = UINavigationController(rootViewController: vc4)
     let tab4 = UITabBarItem()
     tab4.title = NSLocalizedString("Новый заказ", comment: "")
-    //    tab2.image = UIImage(named: "go")
+    tab4.image =  UIImage(named: "add_new")?.withRenderingMode(.alwaysTemplate)
     nav4.tabBarItem = tab4
     
 

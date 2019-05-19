@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A91DD2F1074F812A07FFD4D /* Pods_JKH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27303430467DC5EA7734F52D /* Pods_JKH.framework */; };
 		F75616502290138400213747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756164F2290138400213747 /* AppDelegate.swift */; };
 		F75616522290138400213747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75616512290138400213747 /* MainViewController.swift */; };
 		F75616572290138500213747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75616562290138500213747 /* Assets.xcassets */; };
@@ -22,9 +23,15 @@
 		F75616742290600B00213747 /* SubServiceSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75616732290600B00213747 /* SubServiceSelectionInteractor.swift */; };
 		F7561676229063BB00213747 /* SubServiceSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7561675229063BB00213747 /* SubServiceSelectionCell.swift */; };
 		F756167822906DC800213747 /* StrokedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756167722906DC800213747 /* StrokedButton.swift */; };
+		F79153B02291579F00D83D72 /* AdressSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79153AF2291579F00D83D72 /* AdressSelectionVC.swift */; };
+		F79153B4229159E200D83D72 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79153B2229159E200D83D72 /* UnderlinedTextField.swift */; };
+		F79153B5229159E200D83D72 /* TitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79153B3229159E200D83D72 /* TitledTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27303430467DC5EA7734F52D /* Pods_JKH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7FC1DC947541AFC8A161DF /* Pods-JKH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKH.release.xcconfig"; path = "Target Support Files/Pods-JKH/Pods-JKH.release.xcconfig"; sourceTree = "<group>"; };
+		EF59CDBC06308F934E308D1C /* Pods-JKH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKH.debug.xcconfig"; path = "Target Support Files/Pods-JKH/Pods-JKH.debug.xcconfig"; sourceTree = "<group>"; };
 		F756164C2290138400213747 /* JKH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F756164F2290138400213747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75616512290138400213747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +49,9 @@
 		F75616732290600B00213747 /* SubServiceSelectionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubServiceSelectionInteractor.swift; sourceTree = "<group>"; };
 		F7561675229063BB00213747 /* SubServiceSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubServiceSelectionCell.swift; sourceTree = "<group>"; };
 		F756167722906DC800213747 /* StrokedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokedButton.swift; sourceTree = "<group>"; };
+		F79153AF2291579F00D83D72 /* AdressSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressSelectionVC.swift; sourceTree = "<group>"; };
+		F79153B2229159E200D83D72 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		F79153B3229159E200D83D72 /* TitledTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A91DD2F1074F812A07FFD4D /* Pods_JKH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57E21CBD1F3786F7FE5532FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27303430467DC5EA7734F52D /* Pods_JKH.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC181472227DC482E2704498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF59CDBC06308F934E308D1C /* Pods-JKH.debug.xcconfig */,
+				5D7FC1DC947541AFC8A161DF /* Pods-JKH.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F75616432290138400213747 = {
 			isa = PBXGroup;
 			children = (
 				F756164E2290138400213747 /* JKH */,
 				F756164D2290138400213747 /* Products */,
+				BC181472227DC482E2704498 /* Pods */,
+				57E21CBD1F3786F7FE5532FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +111,12 @@
 				F756167122905EDB00213747 /* ServiceSelection */,
 				F756167222905EF800213747 /* SubServiceSelection */,
 				F7561661229014C800213747 /* DataSet.swift */,
+				F79153B1229157A700D83D72 /* AdressSelection */,
 				F75616632290167B00213747 /* Models.swift */,
 				F756166F22904BB200213747 /* iOSExtentions.swift */,
 				F756167722906DC800213747 /* StrokedButton.swift */,
+				F79153B3229159E200D83D72 /* TitledTextField.swift */,
+				F79153B2229159E200D83D72 /* UnderlinedTextField.swift */,
 				F75616562290138500213747 /* Assets.xcassets */,
 				F75616582290138500213747 /* LaunchScreen.storyboard */,
 				F756165B2290138500213747 /* Info.plist */,
@@ -110,6 +144,14 @@
 			path = SubServiceSelection;
 			sourceTree = "<group>";
 		};
+		F79153B1229157A700D83D72 /* AdressSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F79153AF2291579F00D83D72 /* AdressSelectionVC.swift */,
+			);
+			path = AdressSelection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F756165E2290138500213747 /* Build configuration list for PBXNativeTarget "JKH" */;
 			buildPhases = (
+				9FE385D0A5533F0170AD651B /* [CP] Check Pods Manifest.lock */,
 				F75616482290138400213747 /* Sources */,
 				F75616492290138400213747 /* Frameworks */,
 				F756164A2290138400213747 /* Resources */,
+				BF8B529E537C0F338FDE4221 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,12 +219,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9FE385D0A5533F0170AD651B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JKH-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8B529E537C0F338FDE4221 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKH/Pods-JKH-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JKH/Pods-JKH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F75616482290138400213747 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F7561662229014C800213747 /* DataSet.swift in Sources */,
+				F79153B02291579F00D83D72 /* AdressSelectionVC.swift in Sources */,
 				F75616662290393800213747 /* ServiceSelectionVC.swift in Sources */,
 				F756166C22903F9600213747 /* ServiceSelectionInteractor.swift in Sources */,
 				F756166E2290467100213747 /* TabBarController.swift in Sources */,
@@ -189,10 +281,12 @@
 				F756166A22903EEF00213747 /* ServiceSelectionCell.swift in Sources */,
 				F75616742290600B00213747 /* SubServiceSelectionInteractor.swift in Sources */,
 				F75616502290138400213747 /* AppDelegate.swift in Sources */,
+				F79153B4229159E200D83D72 /* UnderlinedTextField.swift in Sources */,
 				F7561676229063BB00213747 /* SubServiceSelectionCell.swift in Sources */,
 				F75616682290399F00213747 /* SubServiceSelectionVC.swift in Sources */,
 				F756167822906DC800213747 /* StrokedButton.swift in Sources */,
 				F75616642290167B00213747 /* Models.swift in Sources */,
+				F79153B5229159E200D83D72 /* TitledTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +422,7 @@
 		};
 		F756165F2290138500213747 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF59CDBC06308F934E308D1C /* Pods-JKH.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +441,7 @@
 		};
 		F75616602290138500213747 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7FC1DC947541AFC8A161DF /* Pods-JKH.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
