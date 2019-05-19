@@ -19,6 +19,9 @@
 		F756166C22903F9600213747 /* ServiceSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756166B22903F9600213747 /* ServiceSelectionInteractor.swift */; };
 		F756166E2290467100213747 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756166D2290467100213747 /* TabBarController.swift */; };
 		F756167022904BB200213747 /* iOSExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756166F22904BB200213747 /* iOSExtentions.swift */; };
+		F75616742290600B00213747 /* SubServiceSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75616732290600B00213747 /* SubServiceSelectionInteractor.swift */; };
+		F7561676229063BB00213747 /* SubServiceSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7561675229063BB00213747 /* SubServiceSelectionCell.swift */; };
+		F756167822906DC800213747 /* StrokedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756167722906DC800213747 /* StrokedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		F756166B22903F9600213747 /* ServiceSelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSelectionInteractor.swift; sourceTree = "<group>"; };
 		F756166D2290467100213747 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F756166F22904BB200213747 /* iOSExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSExtentions.swift; sourceTree = "<group>"; };
+		F75616732290600B00213747 /* SubServiceSelectionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubServiceSelectionInteractor.swift; sourceTree = "<group>"; };
+		F7561675229063BB00213747 /* SubServiceSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubServiceSelectionCell.swift; sourceTree = "<group>"; };
+		F756167722906DC800213747 /* StrokedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,18 +77,37 @@
 				F756164F2290138400213747 /* AppDelegate.swift */,
 				F756166D2290467100213747 /* TabBarController.swift */,
 				F75616512290138400213747 /* MainViewController.swift */,
-				F75616652290393800213747 /* ServiceSelectionVC.swift */,
-				F756166B22903F9600213747 /* ServiceSelectionInteractor.swift */,
-				F756166922903EEF00213747 /* ServiceSelectionCell.swift */,
-				F75616672290399F00213747 /* SubServiceSelectionVC.swift */,
+				F756167122905EDB00213747 /* ServiceSelection */,
+				F756167222905EF800213747 /* SubServiceSelection */,
 				F7561661229014C800213747 /* DataSet.swift */,
 				F75616632290167B00213747 /* Models.swift */,
 				F756166F22904BB200213747 /* iOSExtentions.swift */,
+				F756167722906DC800213747 /* StrokedButton.swift */,
 				F75616562290138500213747 /* Assets.xcassets */,
 				F75616582290138500213747 /* LaunchScreen.storyboard */,
 				F756165B2290138500213747 /* Info.plist */,
 			);
 			path = JKH;
+			sourceTree = "<group>";
+		};
+		F756167122905EDB00213747 /* ServiceSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F75616652290393800213747 /* ServiceSelectionVC.swift */,
+				F756166B22903F9600213747 /* ServiceSelectionInteractor.swift */,
+				F756166922903EEF00213747 /* ServiceSelectionCell.swift */,
+			);
+			path = ServiceSelection;
+			sourceTree = "<group>";
+		};
+		F756167222905EF800213747 /* SubServiceSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F75616672290399F00213747 /* SubServiceSelectionVC.swift */,
+				F75616732290600B00213747 /* SubServiceSelectionInteractor.swift */,
+				F7561675229063BB00213747 /* SubServiceSelectionCell.swift */,
+			);
+			path = SubServiceSelection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +187,11 @@
 				F756167022904BB200213747 /* iOSExtentions.swift in Sources */,
 				F75616522290138400213747 /* MainViewController.swift in Sources */,
 				F756166A22903EEF00213747 /* ServiceSelectionCell.swift in Sources */,
+				F75616742290600B00213747 /* SubServiceSelectionInteractor.swift in Sources */,
 				F75616502290138400213747 /* AppDelegate.swift in Sources */,
+				F7561676229063BB00213747 /* SubServiceSelectionCell.swift in Sources */,
 				F75616682290399F00213747 /* SubServiceSelectionVC.swift in Sources */,
+				F756167822906DC800213747 /* StrokedButton.swift in Sources */,
 				F75616642290167B00213747 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

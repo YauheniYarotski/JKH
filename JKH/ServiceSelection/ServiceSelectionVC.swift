@@ -19,8 +19,8 @@ class ServiceSelectionVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      view.backgroundColor = UIColor(rgb: 0xF7F7F7)
-      collectionView.backgroundColor = UIColor(rgb: 0xF7F7F7)
+      view.backgroundColor = UIColor.backgroundColor
+      collectionView.backgroundColor = UIColor.backgroundColor
       view.addSubview(collectionView)
       
       collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +58,10 @@ extension ServiceSelectionVC: UICollectionViewDelegateFlowLayout, UICollectionVi
 //    cell.delegate = self
 //    cell.tag = row
     cell.contentView.actionViewClosure = {
-      print(row)
+      let subVC = SubServiceSelectionVC()
+      subVC.navigationItem.title = service.name
+      subVC.interactor.selectedService = service
+      self.navigationController?.pushViewController(subVC, animated: true)
     }
     
     return cell 
