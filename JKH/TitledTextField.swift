@@ -1,9 +1,8 @@
 //
-//  TitledTextField.swift
-//  goDonate
+//  TitledTextField
 //
-//  Created by Yauheni Yarotski on 8/17/17.
-//  Copyright © 2017 KRIT. All rights reserved.
+//  Created by Yauheni Yarotski on 5/3/19.
+//  Copyright © 2019 Yauheni Yarotski. All rights reserved.
 //
 
 import UIKit

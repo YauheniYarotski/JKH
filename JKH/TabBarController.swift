@@ -1,6 +1,6 @@
 //
 //  TabBarController.swift
-//  appWatchLocation
+//  
 //
 //  Created by Yauheni Yarotski on 5/3/19.
 //  Copyright © 2019 Yauheni Yarotski. All rights reserved.

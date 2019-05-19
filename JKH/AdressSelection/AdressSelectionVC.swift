@@ -57,7 +57,12 @@ class AdressSelectionVC: UIViewController {
       nextButton.layer.shadowRadius = 6
       nextButton.setTitle("Далее", for: .normal)
       
-      
+      nextButton.actionViewClosure = {
+        let subVC = TimeSelectionVC()
+        subVC.navigationItem.title = "Время оказания услуги"
+        //      subVC.interactor.selectedSerrvice = service
+        self.navigationController?.pushViewController(subVC, animated: true)
+      }
       
       cityTextField.translatesAutoresizingMaskIntoConstraints = false
       cityTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 55).isActive = true

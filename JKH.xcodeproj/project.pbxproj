@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A91DD2F1074F812A07FFD4D /* Pods_JKH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27303430467DC5EA7734F52D /* Pods_JKH.framework */; };
+		F703DA07229167B5008F22E8 /* TimeSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703DA06229167B5008F22E8 /* TimeSelectionVC.swift */; };
+		F703DA0A22916E3F008F22E8 /* ImageViewWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703DA0922916E3F008F22E8 /* ImageViewWithTitle.swift */; };
 		F75616502290138400213747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756164F2290138400213747 /* AppDelegate.swift */; };
 		F75616522290138400213747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75616512290138400213747 /* MainViewController.swift */; };
 		F75616572290138500213747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75616562290138500213747 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		27303430467DC5EA7734F52D /* Pods_JKH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7FC1DC947541AFC8A161DF /* Pods-JKH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKH.release.xcconfig"; path = "Target Support Files/Pods-JKH/Pods-JKH.release.xcconfig"; sourceTree = "<group>"; };
 		EF59CDBC06308F934E308D1C /* Pods-JKH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKH.debug.xcconfig"; path = "Target Support Files/Pods-JKH/Pods-JKH.debug.xcconfig"; sourceTree = "<group>"; };
+		F703DA06229167B5008F22E8 /* TimeSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionVC.swift; sourceTree = "<group>"; };
+		F703DA0922916E3F008F22E8 /* ImageViewWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWithTitle.swift; sourceTree = "<group>"; };
 		F756164C2290138400213747 /* JKH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F756164F2290138400213747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F75616512290138400213747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -80,8 +84,15 @@
 				EF59CDBC06308F934E308D1C /* Pods-JKH.debug.xcconfig */,
 				5D7FC1DC947541AFC8A161DF /* Pods-JKH.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F703DA08229167BC008F22E8 /* TimeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F703DA06229167B5008F22E8 /* TimeSelectionVC.swift */,
+			);
+			path = TimeSelection;
 			sourceTree = "<group>";
 		};
 		F75616432290138400213747 = {
@@ -114,9 +125,11 @@
 				F79153B1229157A700D83D72 /* AdressSelection */,
 				F75616632290167B00213747 /* Models.swift */,
 				F756166F22904BB200213747 /* iOSExtentions.swift */,
+				F703DA08229167BC008F22E8 /* TimeSelection */,
 				F756167722906DC800213747 /* StrokedButton.swift */,
 				F79153B3229159E200D83D72 /* TitledTextField.swift */,
 				F79153B2229159E200D83D72 /* UnderlinedTextField.swift */,
+				F703DA0922916E3F008F22E8 /* ImageViewWithTitle.swift */,
 				F75616562290138500213747 /* Assets.xcassets */,
 				F75616582290138500213747 /* LaunchScreen.storyboard */,
 				F756165B2290138500213747 /* Info.plist */,
@@ -284,7 +297,9 @@
 				F79153B4229159E200D83D72 /* UnderlinedTextField.swift in Sources */,
 				F7561676229063BB00213747 /* SubServiceSelectionCell.swift in Sources */,
 				F75616682290399F00213747 /* SubServiceSelectionVC.swift in Sources */,
+				F703DA0A22916E3F008F22E8 /* ImageViewWithTitle.swift in Sources */,
 				F756167822906DC800213747 /* StrokedButton.swift in Sources */,
+				F703DA07229167B5008F22E8 /* TimeSelectionVC.swift in Sources */,
 				F75616642290167B00213747 /* Models.swift in Sources */,
 				F79153B5229159E200D83D72 /* TitledTextField.swift in Sources */,
 			);
